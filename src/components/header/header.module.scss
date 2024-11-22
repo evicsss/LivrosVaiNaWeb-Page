@@ -1,0 +1,72 @@
+.header {
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+.logoHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+
+    h1 {
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.navHeader {
+    width: auto;
+    margin-right: 2%;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        gap: 70px;
+    }
+
+.link {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+    &:hover {
+        text-decoration: underline;
+        }
+    }
+}
+
+.barraDeBusca {
+    border: solid #fff;
+    width: 20%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 1%;
+
+    input {
+        background-color: transparent;
+        border: none;
+        width: 60%;
+        height: 5vh;
+
+        &::placeholder {
+            color: #fff;
+            font-size: 15px;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
