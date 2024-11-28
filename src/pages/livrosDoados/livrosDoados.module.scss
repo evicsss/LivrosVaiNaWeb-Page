@@ -1,0 +1,35 @@
+.livrosDoadosSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    padding: 20px;
+}
+
+.livroContainer {
+    display: flex;
+    border: #005695;
+    width: 100%;
+}
+
+.livroContainer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #005695;
+    border-radius: 8px;
+    padding: 10vh;
+
+}
+
+.capaLivro {
+    width: 100%;
+    max-width: 150px; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.livroContainer h2 {
+    font-size: 15px;
+}
