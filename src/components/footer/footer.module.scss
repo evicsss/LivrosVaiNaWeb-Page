@@ -1,4 +1,35 @@
-.footer {
+.contatos {
     background-color: #005695;
-    height: 15vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    color: #fff;
+
+    nav {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
+.contatos nav img {
+    width: 24px; 
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+.contatos nav img:hover {
+    transform: scale(1.1); 
+}
+
+.copyright {
+    height: 6vh;
+    color: #fff;
+    background-color: #232020;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}   
