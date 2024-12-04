@@ -3,21 +3,21 @@
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 20px;
+    padding: 1.10rem;
     background-color: #f9f9f9;
 }
 
 .titulo {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;;
 }
 
 .livrosContainer {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
-    gap: 20px; 
+    gap: 1.25rem; 
     width: 100%;
 }
 
@@ -42,7 +42,7 @@
 .capaLivro {
     width: 100%;
     max-width: 150px;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     margin-bottom: 10px;
 }
 
