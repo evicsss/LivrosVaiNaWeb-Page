@@ -1,8 +1,30 @@
-# React + Vite
+# 📚 Livros Vai na Web  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Descrição:**  
+O **Livros Vai na Web** é um site desenvolvido para conectar pessoas que desejam doar e receber livros. O projeto é responsivo, com animações e um design intuitivo para facilitar o uso em diferentes dispositivos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas  
+
+- **HTML**  
+- **CSS/SCSS**  
+- **JavaScript**  
+- **React**  
+- **React Router DOM**  
+
+---
+
+## 📋 Funcionalidades  
+
+- **Página Inicial** com informações gerais.  
+- **Página Livros Doados:** Listagem dos livros disponíveis para doação.  
+- **Página Quero Doar:** Formulário para doação de livros.  
+- **Barra de busca:** Permite pesquisar livros no site (simulada).  
+- **Responsividade:** Totalmente adaptado para desktop, tablet e dispositivos móveis.  
+
+---
+## 📌 Melhorias Futuras
+- Integração com uma API para gerenciar livros.
+- Sistema de busca funcional.
+- Adição de mais categorias de livros.
