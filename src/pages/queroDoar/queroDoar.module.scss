@@ -1,12 +1,15 @@
 .queroDoarSection {
-    height: 85vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    animation: fadeIn 1s forwards; 
 
     p {
-        font-size: 20px;
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
     }
 }
 
@@ -19,13 +22,16 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 20px;
+    
 
     div {
-        width: 90%;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         color: #005695;
+        margin-bottom: 20px;
     }
 }
 
@@ -33,36 +39,102 @@ input {
     width: 90%;
     height: 5vh;
     border: #005695 solid;
-    border-radius: 10px;
+    border-radius: 15px;
     padding-left: 20px;
-
-    button {
-        width: 90%;
-        height: 5vh;
-        border: #005695 solid;
-        border-radius: 10px;
-        padding-left: 20px;
-    }
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    animation: inputAnimation 0.5s ease-in-out;
 
     &::placeholder {
         color: #000;
-    } 
+    }
+
+    &:focus {
+        border-color: #003f73;
+        outline: none;
+        transform: scale(1.05);
+    }
 }
 
-.button {
+.buttonDoar {
     width: 50%;
     height: 8vh;
     font-size: 24px;
     background-color: #005695;
     color: #fff;
-    border-radius: 10px;
-    padding: 0px;
-    cursor: pointer;  
-    border: none; 
-    transition: background-color 0.3s ease, color 0.3s ease; 
-  
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: buttonBounce 0.5s ease-in-out;
+
     &:hover {
-      background-color: #003f73; 
-      color: #e0e0e0; 
+        background-color: #003f73;
+        color: #e0e0e0;
+    }
+    
+    &:active {
+        background-color: #00274d;
+    }
+}
+
+@media (max-width: 780px){
+    .queroDoarSection {
+        height: 100vh;
+        padding: 10px;
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            width: 90%;
+        }
+
+        form {
+            width: 90%;
+            font-size: 14px;
+            padding: 15px;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes formSlideIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes inputAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes buttonBounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

@@ -30,38 +30,58 @@
         gap: 70px;
     }
 
-.link {
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-
-    &:hover {
-        text-decoration: underline;
+    .link {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+      
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background-color: #fff;
         }
-    }
+        
+        &:hover {
+          color: #00a1d9;
+        }
+   }
 }
 
 .barraDeBusca {
+    background-color: rgb(4, 23, 107); 
     border: solid #fff;
     width: 20%;
     height: 6vh;
+    text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 20px; 
     margin-right: 1%;
-
+  
     input {
         background-color: transparent;
         border: none;
         width: 75%;
         height: 5vh;
-        outline: none;
+        color: #fff;
+        transition: 0.3s ease;
+        padding-top: 9px; 
 
         &::placeholder {
             color: #fff;
             font-size: 15px;
+            text-align: center;
+            
+        }
+
+        &:focus {
+            width: 80%; 
         }
     }
 
@@ -69,5 +89,26 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.2); 
+        }
     }
 }
+    
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .logoHeader {
+      width: 70%;
+    }
+    .navHeader {
+      width: 88%;
+    }
+    .barraDeBusca{
+      display: none;
+    } 
+ }
