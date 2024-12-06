@@ -1,4 +1,4 @@
-import capaLivro from '../../assets/Livro.png'
+import capaJef from '../../assets/livroJEF.jpg'
 import livroGeni from '../../assets/livroGeni.jpg'
 import livroCon from '../../assets/livroCon.jpg'
 import livroLaz from '../../assets/livroLaz.jpg'
@@ -18,13 +18,13 @@ export default function LivrosDoados() {
             <div className={s.livrosContainer}> 
                 <section className={s.livroContainer}> 
                     <img 
-                        src={capaLivro} 
-                        alt="Capa do livro O Protagonista, escrito por Susanne Andrade" 
+                        src={capaJef} 
+                        alt="Capa do livro O Avesso da Pele, escrito por Jeferson Tenório" 
                         className={s.capaLivro} 
                     />
-                    <h2>O Protagonista</h2>
-                    <p>Susanne Andrade</p>
-                    <p><strong>Gênero:</strong> Ficção</p>
+                    <h2>O Avesso da Pele</h2>
+                    <p>Jeferson Tenório</p>
+                    <p><strong>Gênero:</strong> Ficção Urbana</p>
                 </section>
 
                 <section className={s.livroContainer}>

@@ -1,9 +1,9 @@
 import s from './footer.module.scss'
-import logo1 from '../../assets/facebook.png'
-import logo2 from '../../assets/instagram.png'
-import logo3 from '../../assets/linkedin.png'
-import logo4 from '../../assets/twitter.png'
-import logo5 from '../../assets/youtube.png'
+import logoFace from '../../assets/facebook.png'
+import logoInsta from '../../assets/instagram.png'
+import logoLink from '../../assets/linkedin.png'
+import logoTT from '../../assets/twitter.png'
+import logoYou from '../../assets/youtube.png'
 
 
 export default function Footer() {
@@ -12,11 +12,11 @@ export default function Footer() {
             <section className={s.contatos}>
                 <p>1234 - 5678</p>
                 <nav>
-                    <a href=""><img src={logo1} alt="Imagem representando a logo da rede social facebook" /></a>
-                    <a href=""><img src={logo2} alt="Imagem representando a logo da rede social instagram" /></a>
-                    <a href=""><img src={logo3} alt="Imagem representando a logo da rede social linkedin" /></a>
-                    <a href=""><img src={logo4} alt="Imagem representando a logo da rede social twitter" /></a>
-                    <a href=""><img src={logo5} alt="Imagem representando a logo da rede social youtube" /></a>
+                    <a href=""><img src={logoFace} alt="Imagem representando a logo da rede social facebook" /></a>
+                    <a href=""><img src={logoInsta} alt="Imagem representando a logo da rede social instagram" /></a>
+                    <a href="https://www.linkedin.com/in/evilaoliveira/" target="_blank"><img src={logoLink} alt="Imagem representando a logo da rede social linkedin" /></a>
+                    <a href=""><img src={logoTT} alt="Imagem representando a logo da rede social twitter" /></a>
+                    <a href=""><img src={logoYou} alt="Imagem representando a logo da rede social youtube" /></a>
                 </nav>
             </section>
             <section className={s.copyright}>
