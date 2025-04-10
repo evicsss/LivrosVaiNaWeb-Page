@@ -34,11 +34,12 @@ export default function QueroDoar(){
             titulo,
             categoria,
             autor,
-            image_url
+            imagem_url: image_url
         }
         await axios.post("https://api-para-livrosvnw-1.onrender.com/doar",dadosParaEnviar)
         alert("Obrigado, seu livro foi cadastrado com sucessso!")
-    }
+    } 
+
 
 
     return (
