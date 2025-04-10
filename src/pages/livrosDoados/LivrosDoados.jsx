@@ -7,8 +7,28 @@ import livroSte from '../../assets/livroSte.jpg'
 import livroMacu from '../../assets/livroMacu.jpg'
 import livroPeq from '../../assets/livroPeq.jpg'
 import s from './livrosDoados.module.scss'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+
+
 
 export default function LivrosDoados() {
+
+    const [livros, setLivros] = useState([])
+
+    useEffect(() => {
+        async function buscarLivros() {
+            try {
+                const resposta = await axios.get("https://api-para-livrosvnw-1.onrender.com/livros")
+                setLivros(resposta.data)
+            } catch (erro) {
+                console.error("Erro ao buscar livros:", erro)
+            }
+        }
+
+        buscarLivros()
+    }, [])
+
     return (
         <section className={s.livrosDoadosSection}>
             <header>
@@ -103,8 +123,19 @@ export default function LivrosDoados() {
                     <p>Nelson Mandela</p>
                     <p><strong>Gênero:</strong> Autobiografia</p>
                 </section>
-                
-            </div>
+                {livros.map((livro) => (
+        <section key={livro.id} className={s.livroContainer}>
+            <img
+            src={livro.imagem_url || 'https://via.placeholder.com/150'}
+            alt={`Capa do livro ${livro.titulo}`}
+            className={s.capaLivro}
+/>
+            <h2>{livro.titulo}</h2>
+            <p>{livro.autor}</p>
+            <p><strong>Gênero:</strong> {livro.categoria}</p>
+        </section>
+    ))}
+        </div>           
         </section>
     );
 }
