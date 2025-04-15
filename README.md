@@ -7,7 +7,7 @@ A aplicação possui um frontend feito em React, e um backend implementado em **
 
 ---
 
-## 🚀 Tecnologias Utilizadas  
+## Tecnologias Utilizadas  
 
 ### Frontend
 - **HTML5**  
@@ -29,22 +29,22 @@ A aplicação possui um frontend feito em React, e um backend implementado em **
 
 ## Funcionalidades  
 
-- **🏠 Página Inicial:**  
+- **Página Inicial:**  
   Apresenta o projeto, sua proposta e incentiva a participação.
 
-- **📚 Página "Livros Doados":**  
+- **Página "Livros Doados":**  
   Exibe os livros disponíveis para doação em formato de cards.
 
-- **📤 Página "Quero Doar":**  
+- **Página "Quero Doar":**  
   Formulário funcional para que usuários cadastrem seus livros para doação.
 
-- **🔎 Barra de Busca (simulada):**  
+- **Barra de Busca (simulada):**  
   Interface de pesquisa de livros com feedback visual (busca real será implementada futuramente).
 
-- **📱 Responsividade:**  
+- **Responsividade:**  
   Compatível com desktops, tablets e smartphones, utilizando media queries e flexbox/grid.
 
-- **🎨 Animações:**  
+- **Animações:**  
   Transições suaves e interações visuais para melhorar a experiência do usuário.
 
 ---
